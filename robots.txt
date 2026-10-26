@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://memorycarecosts.com/sitemap.xml
