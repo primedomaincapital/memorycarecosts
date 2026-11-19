@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Care Cost Calculator: What Memory Care Costs in Your State | memorycarecosts.com</title>
+<meta name="description" content="Estimate monthly, annual, and three-year memory care costs in any state. Built from CareScout's 2025 Cost of Care Survey assisted living medians, with the documented 20-30% memory care premium applied. Includes a Medicaid spend-down estimate.">
+<link rel="canonical" href="https://memorycarecosts.com/tools/memory-care-cost-calculator">
+<meta property="og:title" content="Memory Care Cost Calculator: What Memory Care Costs in Your State">
+<meta property="og:description" content="Estimate monthly, annual, and three-year memory care costs in any state. Built from CareScout's 2025 Cost of Care Survey assisted living medians, with the documented 20-30% memory care premium applied. Includes a Medicaid spend-down estimate.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://memorycarecosts.com/tools/memory-care-cost-calculator">
+<meta property="og:image" content="https://memorycarecosts.com/images/photo-18459210.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Memory Care Cost Calculator: What Memory Care Costs in Your State">
+<meta name="twitter:description" content="Estimate monthly, annual, and three-year memory care costs in any state. Built from CareScout's 2025 Cost of Care Survey assisted living medians, with the documented 20-30% memory care premium applied. Includes a Medicaid spend-down estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline": "Memory Care Cost Calculator: What Memory Care Costs in Your State","description": "Estimate monthly, annual, and three-year memory care costs in any state. Built from CareScout's 2025 Cost of Care Survey assisted living medians, with the documented 20-30% memory care premium applied. Includes a Medicaid spend-down estimate.","author":{"@type":"Organization","name":"Prime Domain Capital"},"publisher":{"@type":"Organization","name":"Prime Domain Capital"},"datePublished": "2026-11-19","mainEntityOfPage": {"@type": "WebPage", "@id": "https://memorycarecosts.com/tools/memory-care-cost-calculator"}}</script>
+<style>
+:root{--sage:#7d8c6f;--deep:#3d4a38;--terra:#c67b5c;--cream:#faf7f1;--warm:#f3ede1;--ink:#2c332a;--muted:#8a8f85}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.7}
+.serif{font-family:'Cormorant Garamond',serif}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;background:rgba(250,247,241,.92);backdrop-filter:blur(14px);border-bottom:1px solid #e8e0d0}
+nav .brand{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600}
+nav .brand span{color:var(--sage)}
+nav a.cta{background:var(--deep);color:#fff;font-weight:600;font-size:13px;padding:12px 28px;border-radius:30px;text-decoration:none;transition:.3s}
+nav a.cta:hover{background:var(--terra);transform:translateY(-2px)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero canvas#light{position:absolute;inset:0;z-index:1}
+.hero .bg{position:absolute;inset:0;z-index:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover}
+.hero .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(95deg,rgba(250,247,241,.96) 32%,rgba(250,247,241,.5) 62%,rgba(250,247,241,.1) 100%)}
+.hero-inner{position:relative;z-index:2;padding:120px 5vw 80px;max-width:1200px}
+.kicker{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--sage);margin-bottom:20px;font-weight:600}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(50px,7.4vw,110px);font-weight:300;line-height:1.02;letter-spacing:-.015em;max-width:820px}
+h1 em{font-style:italic;color:var(--sage)}
+h1 strong{font-weight:600}
+.hero-sub{max-width:580px;margin-top:26px;font-size:19px;color:#5c6357}
+.hero-price{margin-top:36px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.price-tag{font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:600}
+.price-tag small{display:block;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.btn{display:inline-block;background:var(--deep);color:#fff;font-weight:600;font-size:15px;padding:17px 44px;border-radius:30px;text-decoration:none;transition:.3s}
+.btn:hover{background:var(--terra);transform:translateY(-3px);box-shadow:0 14px 36px rgba(198,123,92,.3)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid #d8cfbc}
+.btn.ghost:hover{border-color:var(--sage);color:var(--sage);box-shadow:none}
+section{padding:110px 5vw}
+.wrap{max-width:1200px;margin:0 auto}
+.sec-label{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:18px;font-weight:600}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,70px);font-weight:300;line-height:1.06;margin-bottom:28px}
+h2 em{font-style:italic;color:var(--sage)}
+.lede{font-size:20px;max-width:700px;color:#5c6357;font-weight:300}
+.heart{background:var(--warm);border-radius:28px;padding:80px 5vw;margin:0 3vw}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:54px;align-items:start}
+.two-col p{font-size:17px;color:#5c6357;margin-bottom:20px;font-weight:300}
+.letter{background:#fff;border-radius:18px;padding:48px;font-family:'Cormorant Garamond',serif;font-size:23px;font-style:italic;line-height:1.5;color:var(--deep);box-shadow:0 8px 40px rgba(0,0,0,.06)}
+.letter .sig{display:block;margin-top:20px;font-size:16px;font-style:normal;font-family:'Inter',sans-serif;color:var(--muted)}
+.moment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}
+.moment-grid figure{border-radius:18px;overflow:hidden;position:relative}
+.moment-grid img{width:100%;height:320px;object-fit:cover;transition:transform .8s}
+.moment-grid figure:hover img{transform:scale(1.06)}
+.moment-grid figcaption{position:absolute;bottom:0;left:0;right:0;padding:24px 20px 18px;background:linear-gradient(transparent,rgba(44,51,42,.85));color:#fff;font-size:14px}
+.numbers{background:var(--deep);color:#fff;border-radius:28px;margin:0 3vw}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:50px;text-align:center}
+.stat b{display:block;font-family:'Cormorant Garamond',serif;font-size:64px;color:var(--terra);font-weight:500}
+.stat span{font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.guides .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
+.card{background:#fff;border-radius:20px;padding:44px 38px;box-shadow:0 4px 28px rgba(0,0,0,.05);transition:.3s;border-top:4px solid var(--sage)}
+.card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(125,140,111,.18)}
+.card h3{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:600;margin-bottom:14px}
+.card p{font-size:15px;color:#6b7066}
+.card .for{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:14px;display:block}
+.cta-sec{text-align:center}
+.cta-sec .lede{margin:0 auto 40px}
+.cta-sec .hero-price{justify-content:center}
+footer{padding:60px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;border-top:1px solid #e8e0d0}
+footer p{font-size:13px;color:var(--muted)}
+footer a{color:var(--sage);text-decoration:none;font-weight:600}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:860px){.two-col,.moment-grid,.stat-grid,.guides .cards{grid-template-columns:1fr}h1{font-size:52px}.heart,.numbers{margin:0;border-radius:0}}
+
+.article-top{padding:150px 5vw 46px}
+.article-top .wrap{max-width:860px}
+.article-top h1{max-width:none}
+.meta{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:22px;font-weight:600}
+.article-hero{margin:0}
+.article-hero img{width:100%;height:440px;object-fit:cover;display:block;border-radius:22px}
+.prose{max-width:860px;margin:56px auto 0}
+.prose p{font-size:18px;color:#3f463c;margin-bottom:24px;font-weight:300;line-height:1.8}
+.prose h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:500;margin:56px 0 22px}
+.prose strong{color:var(--ink);font-weight:600}
+.prose ul,.prose ol{margin:0 0 26px 6px;color:#3f463c;font-size:18px;font-weight:300;list-style:none}
+.prose ul li,.prose ol li{margin-bottom:12px;padding-left:28px;position:relative;line-height:1.7}
+.prose ul li::before{content:'\2014';position:absolute;left:0;color:var(--sage)}
+.prose ol{counter-reset:ol}
+.prose ol li{counter-increment:ol}
+.prose ol li::before{content:counter(ol) '.';position:absolute;left:0;color:var(--sage);font-weight:600}
+.pull{background:#fff;border-radius:18px;padding:44px;font-family:'Cormorant Garamond',serif;font-size:25px;font-style:italic;line-height:1.5;color:var(--deep);box-shadow:0 8px 40px rgba(0,0,0,.06);margin:44px 0;border-left:5px solid var(--sage)}
+.pull p{font-family:'Cormorant Garamond',serif;font-size:25px;font-style:italic;color:var(--deep);margin:0;font-weight:400;line-height:1.5}
+.rule{border:none;text-align:center;margin:48px 0;color:var(--sage)}
+.rule::after{content:'\00B7\00B7\00B7';letter-spacing:.6em;font-size:18px}
+.domain-note{font-size:16px;color:var(--muted);font-style:italic;border-top:1px solid #e8e0d0;padding-top:28px;margin-top:44px;text-align:center}
+.buybox{background:var(--deep);color:#fff;border-radius:28px;padding:64px 40px;text-align:center;margin-top:64px}
+.buybox .tag{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:18px}
+.buybox .p{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:600}
+.buybox .p small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.26em;text-transform:uppercase;opacity:.65;margin-bottom:8px;font-weight:600}
+.buybox .btn{margin-top:28px}
+.more{margin-top:76px}
+.more h3{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:24px;text-align:center}
+.more-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.more-card{background:#fff;border-radius:20px;padding:38px 34px;box-shadow:0 4px 28px rgba(0,0,0,.05);transition:.3s;border-top:4px solid var(--sage);text-decoration:none;display:block}
+.more-card:hover{transform:translateY(-6px)}
+.more-card .for{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:12px;display:block}
+.more-card h4{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.more-card p{font-size:15px;color:#6b7066;margin:0 0 14px}
+.more-card span.lnk{font-size:13px;font-weight:600;color:var(--terra)}
+.prevnext{display:flex;justify-content:space-between;margin:60px 0 110px;font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic}
+.prevnext a{color:var(--sage);text-decoration:none}
+.prevnext a:hover{color:var(--terra)}
+@media(max-width:860px){.more-grid{grid-template-columns:1fr}.article-hero img{height:260px}.pull{padding:32px 26px;font-size:21px}}
+</style>
+</head><body>
+<nav><a href="../index.html" style="text-decoration:none;color:inherit"><div class="brand">Memory<span>Care</span>Costs.com</div></a><a class="cta" href="../market-data.html" style="background:transparent;color:var(--ink);border:1.5px solid #d8cfbc">Market data</a></nav>
+<div class="article-top"><div class="wrap"><div class="kicker">Tools &middot; Memory Care Costs</div><h1>Memory Care Cost Calculator</h1><div class="meta">Prime Domain Capital Research &middot; November 19, 2026</div></div></div>
+<div class="wrap">
+<article class="prose">
+<p class="lede">The number on the brochure is never the number on the bill. A memory care community quotes a base rate, then adds level-of-care charges, medication management, and incontinence care &mdash; and the total lands 20% to 30% above the assisted living rate in the same building. This calculator starts from the surveyed assisted living median in your state and applies that documented premium, so the estimate you get is the all-in monthly figure families actually pay &mdash; not the teaser rate.</p>
+
+<div style="background:#fff;border-radius:22px;padding:44px 40px;box-shadow:0 8px 40px rgba(0,0,0,.06);margin:44px 0">
+<h2 style="font-size:32px;margin:0 0 8px">Your estimate</h2>
+<p style="font-size:15px;color:#6b7066;margin:0 0 28px">Four answers. The results update as you type.</p>
+<form id="calcForm" onsubmit="return false" style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+<div>
+<label for="state" style="display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">State</label>
+<select id="state" style="width:100%;padding:14px 16px;font-size:16px;font-family:'Inter',sans-serif;border:1.5px solid #d8cfbc;border-radius:12px;background:#fff;color:var(--ink)">
+<option value="US" selected>United States (national median)</option>
+<option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+<option value="Colorado">Colorado</option>
+<option value="Connecticut">Connecticut</option>
+<option value="Delaware">Delaware</option>
+<option value="Florida">Florida</option>
+<option value="Georgia">Georgia</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Idaho">Idaho</option>
+<option value="Illinois">Illinois</option>
+<option value="Indiana">Indiana</option>
+<option value="Iowa">Iowa</option>
+<option value="Kansas">Kansas</option>
+<option value="Kentucky">Kentucky</option>
+<option value="Louisiana">Louisiana</option>
+<option value="Maine">Maine</option>
+<option value="Maryland">Maryland</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="Michigan">Michigan</option>
+<option value="Minnesota">Minnesota</option>
+<option value="Mississippi">Mississippi</option>
+<option value="Missouri">Missouri</option>
+<option value="Montana">Montana</option>
+<option value="Nebraska">Nebraska</option>
+<option value="Nevada">Nevada</option>
+<option value="New Hampshire">New Hampshire</option>
+<option value="New Jersey">New Jersey</option>
+<option value="New Mexico">New Mexico</option>
+<option value="New York">New York</option>
+<option value="North Carolina">North Carolina</option>
+<option value="North Dakota">North Dakota</option>
+<option value="Ohio">Ohio</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+<option value="Pennsylvania">Pennsylvania</option>
+<option value="Rhode Island">Rhode Island</option>
+<option value="South Carolina">South Carolina</option>
+<option value="South Dakota">South Dakota</option>
+<option value="Tennessee">Tennessee</option>
+<option value="Texas">Texas</option>
+<option value="Utah">Utah</option>
+<option value="Vermont">Vermont</option>
+<option value="Virginia">Virginia</option>
+<option value="Washington">Washington</option>
+<option value="West Virginia">West Virginia</option>
+<option value="Wisconsin">Wisconsin</option>
+<option value="Wyoming">Wyoming</option>
+</select>
+</div>
+<div>
+<span style="display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Level of care</span>
+<label style="display:block;font-size:16px;padding:7px 0"><input type="radio" name="level" value="al" style="margin-right:8px"> Assisted living</label>
+<label style="display:block;font-size:16px;padding:7px 0"><input type="radio" name="level" value="mc" checked style="margin-right:8px"> Memory care <span style="color:#6b7066;font-size:14px">(assisted living + 20&ndash;30%)</span></label>
+</div>
+<div>
+<label for="months" style="display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Months of care</label>
+<input id="months" type="number" min="1" max="120" value="24" style="width:100%;padding:14px 16px;font-size:16px;font-family:'Inter',sans-serif;border:1.5px solid #d8cfbc;border-radius:12px">
+</div>
+<div>
+<label for="assets" style="display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Current savings / assets ($)</label>
+<input id="assets" type="number" min="0" step="1000" value="100000" style="width:100%;padding:14px 16px;font-size:16px;font-family:'Inter',sans-serif;border:1.5px solid #d8cfbc;border-radius:12px">
+<p style="font-size:13px;color:#6b7066;margin:8px 0 0">Used only for the Medicaid spend-down estimate below. Nothing you enter leaves your browser.</p>
+</div>
+</form>
+<div style="text-align:center;margin-top:28px"><button id="calcBtn" type="button" class="btn" style="border:none;cursor:pointer">Calculate</button></div>
+<noscript><p style="margin-top:24px;font-size:15px;color:#6b7066">This calculator needs JavaScript to compute your estimate. The state table further down this page shows the same figures the calculator uses, so the numbers are here either way.</p></noscript>
+<div id="results" style="margin-top:36px;border-top:1px solid #e8e0d0;padding-top:32px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+<div style="background:var(--warm);border-radius:16px;padding:26px 24px"><div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:8px">Monthly cost</div><div id="outMonthly" class="serif" style="font-size:34px;font-weight:600;line-height:1.15">&mdash;</div><div id="outMonthlyNote" style="font-size:13px;color:#6b7066;margin-top:6px"></div></div>
+<div style="background:var(--warm);border-radius:16px;padding:26px 24px"><div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:8px">Annual cost</div><div id="outAnnual" class="serif" style="font-size:34px;font-weight:600;line-height:1.15">&mdash;</div><div style="font-size:13px;color:#6b7066;margin-top:6px">12 months at the monthly rate</div></div>
+<div style="background:var(--warm);border-radius:16px;padding:26px 24px"><div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:8px">3-year total</div><div id="outThree" class="serif" style="font-size:34px;font-weight:600;line-height:1.15">&mdash;</div><div style="font-size:13px;color:#6b7066;margin-top:6px">36 months at the monthly rate</div></div>
+<div style="background:var(--warm);border-radius:16px;padding:26px 24px"><div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:8px">Total for your stay</div><div id="outStay" class="serif" style="font-size:34px;font-weight:600;line-height:1.15">&mdash;</div><div id="outStayNote" style="font-size:13px;color:#6b7066;margin-top:6px"></div></div>
+</div>
+<div style="background:var(--deep);color:#fff;border-radius:16px;padding:30px 28px;margin-top:18px"><div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:8px">Medicaid spend-down</div><div id="outSpend" class="serif" style="font-size:28px;font-weight:500;line-height:1.3">&mdash;</div><p style="font-size:14px;opacity:.85;margin:12px 0 0;line-height:1.7">Medicaid asset limits vary by state &mdash; most states set the individual limit near $2,000 in countable assets, but the exact figure, the home exemption, and the spousal allowance all differ. Spending down to the limit does not guarantee eligibility, and the rules on transfers and look-back periods are strict. Treat this line as a planning signal, not eligibility advice: talk to an elder-law attorney in your state before making decisions about assets.</p></div>
+</div>
+</div>
+
+<h2>How the numbers work</h2>
+<p>The base figure is the surveyed assisted living median for the state you pick: the CareScout Cost of Care Survey for 2025, based on 4,944 completed surveys of licensed assisted living communities, with fieldwork from July to November 2025 and results released March 2, 2026. The national median is $6,200 a month for a private one-bedroom, or $74,400 a year.</p>
+<p>Memory care is not surveyed as its own line. The industry&rsquo;s working rule, from the National Center for Assisted Living, is that memory care runs 20% to 30% above standard assisted living in the same market, reflecting higher staff ratios, secured environments, and dementia-trained staff. This calculator applies that band: the low end of the range is the state median plus 20%, the high end is plus 30%, and the midpoint &mdash; plus 25% &mdash; is the single figure used for the spend-down estimate. At the national median, that puts memory care at $7,440 to $8,060 a month, with $7,750 as the midpoint.</p>
+<p>Two independent surveys land in the same range from different directions. A Place for Mom&rsquo;s 2026 data puts memory care at $6,690 a month against $5,419 for assisted living inside the same survey &mdash; a 23% premium, consistent with the industry rule. SeniorLiving.org&rsquo;s June 2026 figures put the national memory care median at $8,019 a month. The spread between those two &mdash; $6,690 to $8,019 &mdash; brackets the calculator&rsquo;s national range, which is the point: no single number is the price. The range is the honest answer.</p>
+<p>What the calculator does not include: the community fee at move-in ($2,000 to $5,000 in many contracts), second-person fees, and level-of-care add-ons that rise as needs increase. Those sit on top of the medians here, which is why families should always ask for the all-in monthly figure, in writing, before deciding.</p>
+
+<h2>The table behind the calculator</h2>
+<p>Every figure the calculator uses, printed in full &mdash; so the page is useful even with JavaScript off. Assisted living is the surveyed CareScout 2025 state median (private one-bedroom). Memory care is modeled from it at the 20&ndash;30% premium: low is the median plus 20%, high is plus 30%. These are modeled figures, not surveyed memory care prices &mdash; no survey publishes a state-by-state memory care median.</p>
+<div style="overflow-x:auto;margin:32px 0">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+<thead><tr style="text-align:left;border-bottom:2px solid var(--deep)"><th style="padding:10px 12px">State</th><th style="padding:10px 12px">Assisted living / month</th><th style="padding:10px 12px">Memory care / month (modeled)</th></tr></thead>
+<tbody>
+<tr><td><strong>United States (national median)</strong></td><td><strong>$6,200</strong></td><td><strong>$7,440 &ndash; $8,060</strong></td></tr>
+<tr><td>Alabama</td><td>$4,425</td><td>$5,310 &ndash; $5,752</td></tr>
+<tr><td>Alaska</td><td>$9,882</td><td>$11,858 &ndash; $12,847</td></tr>
+<tr><td>Arizona</td><td>$6,250</td><td>$7,500 &ndash; $8,125</td></tr>
+<tr><td>Arkansas</td><td>$4,637</td><td>$5,564 &ndash; $6,028</td></tr>
+<tr><td>California</td><td>$7,000</td><td>$8,400 &ndash; $9,100</td></tr>
+<tr><td>Colorado</td><td>$6,584</td><td>$7,901 &ndash; $8,559</td></tr>
+<tr><td>Connecticut</td><td>$9,118</td><td>$10,942 &ndash; $11,853</td></tr>
+<tr><td>Delaware</td><td>$7,600</td><td>$9,120 &ndash; $9,880</td></tr>
+<tr><td>Florida</td><td>$5,610</td><td>$6,732 &ndash; $7,293</td></tr>
+<tr><td>Georgia</td><td>$5,300</td><td>$6,360 &ndash; $6,890</td></tr>
+<tr><td>Hawaii</td><td>$12,096</td><td>$14,515 &ndash; $15,725</td></tr>
+<tr><td>Idaho</td><td>$5,175</td><td>$6,210 &ndash; $6,728</td></tr>
+<tr><td>Illinois</td><td>$6,219</td><td>$7,463 &ndash; $8,085</td></tr>
+<tr><td>Indiana</td><td>$5,639</td><td>$6,767 &ndash; $7,331</td></tr>
+<tr><td>Iowa</td><td>$5,380</td><td>$6,456 &ndash; $6,994</td></tr>
+<tr><td>Kansas</td><td>$5,975</td><td>$7,170 &ndash; $7,768</td></tr>
+<tr><td>Kentucky</td><td>$5,528</td><td>$6,634 &ndash; $7,186</td></tr>
+<tr><td>Louisiana</td><td>$5,162</td><td>$6,194 &ndash; $6,711</td></tr>
+<tr><td>Maine</td><td>$8,205</td><td>$9,846 &ndash; $10,666</td></tr>
+<tr><td>Maryland</td><td>$7,172</td><td>$8,606 &ndash; $9,324</td></tr>
+<tr><td>Massachusetts</td><td>$9,600</td><td>$11,520 &ndash; $12,480</td></tr>
+<tr><td>Michigan</td><td>$5,818</td><td>$6,982 &ndash; $7,563</td></tr>
+<tr><td>Minnesota</td><td>$6,572</td><td>$7,886 &ndash; $8,544</td></tr>
+<tr><td>Mississippi</td><td>$4,369</td><td>$5,243 &ndash; $5,680</td></tr>
+<tr><td>Missouri</td><td>$5,400</td><td>$6,480 &ndash; $7,020</td></tr>
+<tr><td>Montana</td><td>$6,075</td><td>$7,290 &ndash; $7,898</td></tr>
+<tr><td>Nebraska</td><td>$6,350</td><td>$7,620 &ndash; $8,255</td></tr>
+<tr><td>Nevada</td><td>$6,241</td><td>$7,489 &ndash; $8,113</td></tr>
+<tr><td>New Hampshire</td><td>$8,025</td><td>$9,630 &ndash; $10,432</td></tr>
+<tr><td>New Jersey</td><td>$8,710</td><td>$10,452 &ndash; $11,323</td></tr>
+<tr><td>New Mexico</td><td>$5,950</td><td>$7,140 &ndash; $7,735</td></tr>
+<tr><td>New York</td><td>$7,110</td><td>$8,532 &ndash; $9,243</td></tr>
+<tr><td>North Carolina</td><td>$6,496</td><td>$7,795 &ndash; $8,445</td></tr>
+<tr><td>North Dakota</td><td>$4,729</td><td>$5,675 &ndash; $6,148</td></tr>
+<tr><td>Ohio</td><td>$6,102</td><td>$7,322 &ndash; $7,933</td></tr>
+<tr><td>Oklahoma</td><td>$6,150</td><td>$7,380 &ndash; $7,995</td></tr>
+<tr><td>Oregon</td><td>$6,874</td><td>$8,249 &ndash; $8,936</td></tr>
+<tr><td>Pennsylvania</td><td>$6,480</td><td>$7,776 &ndash; $8,424</td></tr>
+<tr><td>Rhode Island</td><td>$7,780</td><td>$9,336 &ndash; $10,114</td></tr>
+<tr><td>South Carolina</td><td>$5,350</td><td>$6,420 &ndash; $6,955</td></tr>
+<tr><td>South Dakota</td><td>$4,900</td><td>$5,880 &ndash; $6,370</td></tr>
+<tr><td>Tennessee</td><td>$5,845</td><td>$7,014 &ndash; $7,598</td></tr>
+<tr><td>Texas</td><td>$5,666</td><td>$6,799 &ndash; $7,366</td></tr>
+<tr><td>Utah</td><td>$5,475</td><td>$6,570 &ndash; $7,118</td></tr>
+<tr><td>Vermont</td><td>$8,597</td><td>$10,316 &ndash; $11,176</td></tr>
+<tr><td>Virginia</td><td>$6,945</td><td>$8,334 &ndash; $9,028</td></tr>
+<tr><td>Washington</td><td>$7,600</td><td>$9,120 &ndash; $9,880</td></tr>
+<tr><td>West Virginia</td><td>$6,340</td><td>$7,608 &ndash; $8,242</td></tr>
+<tr><td>Wisconsin</td><td>$6,540</td><td>$7,848 &ndash; $8,502</td></tr>
+<tr><td>Wyoming</td><td>$5,325</td><td>$6,390 &ndash; $6,922</td></tr>
+</tbody>
+</table>
+</div>
+<p>The cheapest state is Mississippi at $4,369 a month for assisted living; the priciest is Hawaii at $12,096. The gap between them is 2.8 times &mdash; and the same care, priced the same way, costs $5,243 to $5,680 a month as memory care in Mississippi and $14,515 to $15,725 in Hawaii.</p>
+
+<h2>Why the state matters more than the diagnosis</h2>
+<p>Families usually shop memory care as if the care level sets the price. The survey says geography sets it first: the difference between the cheapest and priciest states is larger than the difference between assisted living and memory care in any single state. A family in Mississippi paying the top of the memory care band still pays less than a family in Hawaii paying the assisted living median. That is why the first question in any memory care budget is not how much care is needed. It is where.</p>
+<p>The counterargument is worth stating plainly. State medians hide the variation inside a state &mdash; a community in San Francisco or Manhattan can charge double the state median, and a rural community can charge well under it. The median is a planning benchmark, not a quote. But the benchmark is still the right starting point, because it is the only figure that is comparable across all fifty states, and it is the figure the rest of the senior-care ecosystem already cites.</p>
+<p>Memory care typically lasts two to three years, and the tail runs to ten. At the national midpoint of $7,750 a month, two years costs $186,000 and three years $279,000 &mdash; before community fees and care-level increases. That is the arithmetic that makes the spend-down line above the most important output on this page: most families do not run out of care needs. They run out of the money set aside to pay for them.</p>
+
+<p>Sources: <a href="https://seniorcarehomes.com/senior-living-articles/assisted-living-costs-prices-in-every-state-what-drives-them-and-how-to-pay/" target="_blank" rel="noopener">CareScout 2025 Cost of Care Survey state medians, as reproduced by SeniorCareHomes</a>, <a href="https://digitalcare60.com/care-cost" target="_blank" rel="noopener">CareScout 2025 state table, as reproduced by DigitalCare60</a>, <a href="https://www.aplaceformom.com/senior-living-data/long-term-care-costs" target="_blank" rel="noopener">A Place for Mom, 2026 long-term care costs</a>, <a href="https://www.seniorliving.org/memory-care/costs/" target="_blank" rel="noopener">SeniorLiving.org, memory care costs, June 2026</a>, <a href="https://www.alz.org/news/2025/facts-figures-report-alzheimers-treatment" target="_blank" rel="noopener">Alzheimer&rsquo;s Association, 2025 Alzheimer&rsquo;s Disease Facts and Figures</a>. The 20&ndash;30% memory care premium is the National Center for Assisted Living rule, as used in this site&rsquo;s own articles.</p>
+<p><strong>Cite this page:</strong> Memory Care Cost Calculator, memorycarecosts.com &mdash; https://memorycarecosts.com/tools/memory-care-cost-calculator &mdash; figures from the CareScout 2025 Cost of Care Survey with the 20&ndash;30% memory care premium applied. Last updated: November 19, 2026.</p>
+</article>
+<div class="more"><h3>More from MemoryCareCosts.com</h3><div class="more-grid"><a class="more-card" href="../market-data.html"><span class="for">Market data</span><h4>Memory Care Cost Data</h4><p>National medians and state-by-state base rates, with the memory care premium and the methodology behind every figure.</p><span class="lnk">See the data &rarr;</span></a><a class="more-card" href="../insights/article6.html"><span class="for">Insight 06</span><h4>Memory Care Costs by State: Where the Same Care Costs Twice as Much</h4><p>Memory care costs $5,243 a month in Mississippi and up to $15,725 in Hawaii. Why the gap runs wider than assisted living.</p><span class="lnk">Read the briefing &rarr;</span></a></div></div>
+</div>
+<footer><p>Offered by <strong>Prime Domain Capital</strong> · Private holder of category-defining domains</p><p><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p></footer>
+<script>
+const AL_MEDIAN = {
+ "Alabama": 4425,
+ "Alaska": 9882,
+ "Arizona": 6250,
+ "Arkansas": 4637,
+ "California": 7000,
+ "Colorado": 6584,
+ "Connecticut": 9118,
+ "Delaware": 7600,
+ "Florida": 5610,
+ "Georgia": 5300,
+ "Hawaii": 12096,
+ "Idaho": 5175,
+ "Illinois": 6219,
+ "Indiana": 5639,
+ "Iowa": 5380,
+ "Kansas": 5975,
+ "Kentucky": 5528,
+ "Louisiana": 5162,
+ "Maine": 8205,
+ "Maryland": 7172,
+ "Massachusetts": 9600,
+ "Michigan": 5818,
+ "Minnesota": 6572,
+ "Mississippi": 4369,
+ "Missouri": 5400,
+ "Montana": 6075,
+ "Nebraska": 6350,
+ "Nevada": 6241,
+ "New Hampshire": 8025,
+ "New Jersey": 8710,
+ "New Mexico": 5950,
+ "New York": 7110,
+ "North Carolina": 6496,
+ "North Dakota": 4729,
+ "Ohio": 6102,
+ "Oklahoma": 6150,
+ "Oregon": 6874,
+ "Pennsylvania": 6480,
+ "Rhode Island": 7780,
+ "South Carolina": 5350,
+ "South Dakota": 4900,
+ "Tennessee": 5845,
+ "Texas": 5666,
+ "Utah": 5475,
+ "Vermont": 8597,
+ "Virginia": 6945,
+ "Washington": 7600,
+ "West Virginia": 6340,
+ "Wisconsin": 6540,
+ "Wyoming": 5325
+};
+const NATIONAL_AL = 6200;
+function fmt(n){return "$"+Math.round(n).toLocaleString("en-US");}
+function calc(){
+  var sel=document.getElementById("state");
+  var state=sel.value;
+  var al=(state==="US")?NATIONAL_AL:AL_MEDIAN[state];
+  var level=document.querySelector('input[name="level"]:checked').value;
+  var months=parseInt(document.getElementById("months").value,10);
+  if(!months||months<1){months=24;}
+  if(months>120){months=120;}
+  var assets=parseFloat(document.getElementById("assets").value);
+  if(isNaN(assets)||assets<0){assets=0;}
+  var lo,mid,hi;
+  if(level==="mc"){lo=Math.round(al*1.20);mid=Math.round(al*1.25);hi=Math.round(al*1.30);}
+  else{lo=mid=hi=al;}
+  var mEl=document.getElementById("outMonthly");
+  var mNote=document.getElementById("outMonthlyNote");
+  if(level==="mc"){
+    mEl.textContent=fmt(lo)+" \u2013 "+fmt(hi);
+    mNote.textContent="Memory care in "+(state==="US"?"the United States":state)+": assisted living median "+fmt(al)+"/mo plus the 20\u201330% premium.";
+  }else{
+    mEl.textContent=fmt(al);
+    mNote.textContent="Assisted living median in "+(state==="US"?"the United States":state)+", CareScout 2025.";
+  }
+  document.getElementById("outAnnual").textContent=(level==="mc")?fmt(lo*12)+" \u2013 "+fmt(hi*12):fmt(al*12);
+  document.getElementById("outThree").textContent=(level==="mc")?fmt(lo*36)+" \u2013 "+fmt(hi*36):fmt(al*36);
+  document.getElementById("outStay").textContent=(level==="mc")?fmt(lo*months)+" \u2013 "+fmt(hi*months):fmt(al*months);
+  document.getElementById("outStayNote").textContent="For "+months+" month"+(months===1?"":"s")+" of care.";
+  var sp=document.getElementById("outSpend");
+  if(assets>0){
+    var m=Math.round(assets/mid);
+    sp.textContent="About "+m+" month"+(m===1?"":"s")+" of care at the "+fmt(mid)+"/mo midpoint rate.";
+  }else{
+    sp.textContent="Enter your savings above to see how many months they cover.";
+  }
+}
+document.getElementById("calcBtn").addEventListener("click",calc);
+document.getElementById("state").addEventListener("change",calc);
+document.getElementById("months").addEventListener("input",calc);
+document.getElementById("assets").addEventListener("input",calc);
+var radios=document.querySelectorAll('input[name="level"]');
+for(var i=0;i<radios.length;i++){radios[i].addEventListener("change",calc);}
+calc();
+</script>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
